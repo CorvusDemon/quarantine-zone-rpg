@@ -1,0 +1,100 @@
+{
+  "enemies": [
+    {
+      "id": "normal_zombie",
+      "name": "Normal Zombie",
+      "type": "standard",
+      "is_boss": false,
+      "max_hp": 60,
+      "base_damage": 18,
+      "infection_on_hit": 3,
+      "attack_pattern": "heavy",
+      "best_reaction_hint": "block",
+      "escape_chance": 70,
+      "description": "A slow but durable infected. Its attacks are heavy and predictable.",
+      "loot_mode": "single_roll",
+      "no_drop_chance": 35,
+      "loot_table": [
+        { "item_id": "cloth", "chance": 45, "quantity": 1 },
+        { "item_id": "medical_supplies", "chance": 10, "quantity": 1 },
+        { "item_id": "bio_sample", "chance": 10, "quantity": 1 }
+      ]
+    },
+    {
+      "id": "runner",
+      "name": "Runner",
+      "type": "standard",
+      "is_boss": false,
+      "max_hp": 30,
+      "base_damage": 10,
+      "infection_on_hit": 2,
+      "attack_pattern": "fast",
+      "best_reaction_hint": "counterattack",
+      "escape_chance": 50,
+      "description": "A fragile but aggressive infected. It attacks quickly and rarely stays still.",
+      "loot_mode": "single_roll",
+      "no_drop_chance": 35,
+      "loot_table": [
+        { "item_id": "cloth", "chance": 30, "quantity": 1 },
+        { "item_id": "alcohol", "chance": 20, "quantity": 1 },
+        { "item_id": "medical_supplies", "chance": 15, "quantity": 1 }
+      ]
+    },
+    {
+      "id": "toxic_zombie",
+      "name": "Toxic Zombie",
+      "type": "special",
+      "is_boss": false,
+      "max_hp": 50,
+      "base_damage": 13,
+      "infection_on_hit": 8,
+      "attack_pattern": "toxic",
+      "best_reaction_hint": "dodge",
+      "escape_chance": 60,
+      "description": "An infected covered in toxic fluids. Its attacks rapidly increase infection.",
+      "loot_mode": "single_roll",
+      "no_drop_chance": 20,
+      "loot_table": [
+        { "item_id": "bio_sample", "chance": 40, "quantity": 1 },
+        { "item_id": "alcohol", "chance": 25, "quantity": 1 },
+        { "item_id": "medical_supplies", "chance": 15, "quantity": 1 }
+      ]
+    },
+    {
+      "id": "mutant",
+      "name": "Mutant",
+      "type": "elite",
+      "is_boss": false,
+      "max_hp": 100,
+      "base_damage": 25,
+      "infection_on_hit": 10,
+      "attack_pattern": "mixed",
+      "best_reaction_hint": "adaptive",
+      "escape_chance": 35,
+      "description": "A heavily mutated infected with unstable behavior and dangerous attacks.",
+      "loot_mode": "single_roll",
+      "no_drop_chance": 10,
+      "loot_table": [
+        { "item_id": "bio_sample", "chance": 50, "quantity": 1 },
+        { "item_id": "medical_supplies", "chance": 25, "quantity": 1 },
+        { "item_id": "alcohol", "chance": 15, "quantity": 1 }
+      ]
+    },
+    {
+      "id": "alpha_mutant",
+      "name": "Alpha Mutant",
+      "type": "boss",
+      "is_boss": true,
+      "max_hp": 200,
+      "base_damage": 32,
+      "infection_on_hit": 12,
+      "attack_pattern": "mixed",
+      "best_reaction_hint": "adaptive",
+      "escape_chance": 0,
+      "description": "The final evolved infected. Extremely dangerous and impossible to escape from.",
+      "loot_mode": "none",
+      "no_drop_chance": 100,
+      "loot_table": []
+    }
+  ]
+}
