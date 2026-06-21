@@ -1,0 +1,74 @@
+{
+  "player": {
+    "name": "Survivor",
+    "hp": 84,
+    "max_hp": 100,
+    "infection": 24,
+    "max_infection": 100,
+    "current_location_id": "rooftop",
+    "inventory": {
+      "bandage": 35,
+      "cloth": 55,
+      "crowbar": 1,
+      "search_police_station": 2,
+      "search_street": 45,
+      "alcohol": 15,
+      "flashlight": 1,
+      "search_metro": 3,
+      "gas_mask": 1,
+      "access_card": 1
+    },
+    "flags": {
+      "first_aid_notes": true,
+      "research_notes": true,
+      "lab_formula": true
+    },
+    "suppressant_battles_left": 0,
+    "used_one_time_actions": [
+      [
+        "hospital",
+        "find_access_card"
+      ],
+      [
+        "hospital",
+        "hospital_treatment"
+      ],
+      [
+        "laboratory",
+        "find_lab_formula"
+      ],
+      [
+        "metro",
+        "find_gas_mask"
+      ],
+      [
+        "police_station",
+        "find_crowbar"
+      ],
+      [
+        "rooftop",
+        "final_battle"
+      ],
+      [
+        "hospital",
+        "find_research_notes"
+      ],
+      [
+        "street",
+        "find_flashlight"
+      ]
+    ],
+    "escape_attempts": 0,
+    "found_notes": []
+  },
+  "enemy": {
+    "id": "alpha_mutant",
+    "hp": 14,
+    "max_hp": 200,
+    "base_damage": 32,
+    "infection_on_hit": 12,
+    "attack_pattern": "mixed",
+    "escape_chance": 0,
+    "is_boss": true
+  }
+}
